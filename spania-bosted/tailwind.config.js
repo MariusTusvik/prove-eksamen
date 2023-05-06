@@ -9,6 +9,7 @@ module.exports = {
         tertiary: "#f0cd71",
         accent: "#004264",
         accentShade: "#155a7e",
+        secondaryAccent: "#d3af50",
       },
     },
   },

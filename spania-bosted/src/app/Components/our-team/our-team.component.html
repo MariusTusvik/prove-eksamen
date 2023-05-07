@@ -1,0 +1,43 @@
+<div class="grid grid-cols-3 gap-12">
+  <div
+    *ngFor="let employee of employees; let i = index"
+    class="shadow-xl h-fit"
+  >
+    <div class="bg-primary p-6 inline-block h-fit">
+      <img
+        src="{{ employee.image }}"
+        alt="{{ employee.name }}"
+        class="w-full object-contain mb-4"
+      />
+      <h2 class="text-lg font-semibold mb-2">{{ employee.name }}</h2>
+      <p class="text-gray-600">{{ employee.position }}</p>
+    </div>
+    <div class="bg-secondary px-6 py-4">
+      <p>
+        Telefon: <span>{{ employee.phone }}</span>
+      </p>
+      <p>
+        Email: <span>{{ employee.email }}</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container mx-auto p-6">
+  <div class="overflow-hidden">
+    <div class="whitespace-nowrap transition-transform duration-500 ease-in-out" [style.transform]="'translateX(-' + ((slideIndex - 1) * 100) + '%)'">
+      <ng-container *ngFor="let employee of employees; let i = index">
+        <div class="bg-primary p-6 inline-block w-1/4" [style.gridColumn]="(i % 4) + 1" [style.gridRow]="calcGridRow(i)" [style.marginLeft]="(i % 8 === 0) ? '0' : '1rem'">
+          <img [src]="employee.image" alt="{{employee.name}}" class="w-48 object-contain mb-4" />
+          <h2 class="text-lg font-semibold mb-2">{{ employee.name }}</h2>
+          <p class="text-gray-600">{{ employee.position }}</p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="flex justify-center mt-8">
+    <button *ngIf="slideIndex > 1" class="btn-accent w-40 mr-4" (click)="previousSlide()">Previous</button>
+    <button *ngIf="slideIndex < (this.employees.length / 4)" class="btn-accent w-40" (click)="nextSlide()">Next</button>
+  </div>
+</div>
+ -->

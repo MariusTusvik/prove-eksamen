@@ -10,6 +10,7 @@ module.exports = {
         accent: "#004264",
         accentShade: "#155a7e",
         secondaryAccent: "#d3af50",
+        offWhite: "#e3f5fe",
       },
     },
   },

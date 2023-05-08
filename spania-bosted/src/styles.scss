@@ -33,16 +33,17 @@ $spania-bosted-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($spania-bosted-theme);
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .btn-accent {
-  @apply bg-accent py-2 px-4 rounded-2xl hover:bg-accent/80 active:bg-accent/60 border border-accent/60 text-white;
+  @apply bg-accent py-2 px-4 rounded-2xl hover:bg-accent/80 active:border-4 border-accent/60 text-white;
 }
 
 .btn-secondaryAccent {
-  @apply bg-secondaryAccent py-2 px-4 rounded-2xl hover:bg-secondaryAccent/80 active:bg-secondaryAccent/60 border border-secondaryAccent/60 text-white;
+  @apply bg-secondaryAccent py-2 px-4 rounded-2xl hover:bg-secondaryAccent/80 active:border-4 border-secondaryAccent/60 text-white;
 }
 
 body,
@@ -59,11 +60,6 @@ html {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-
-input:focus {
-  outline: none;
-}
-
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

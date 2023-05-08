@@ -1,0 +1,22 @@
+<!-- project-modal.component.html -->
+<div class="overflow-y-scroll px-8 py-4">
+  <img [src]="data.projectData.imgUrl" alt="{{ data.projectData.projectName }}" class="w-full h-60 mb-4 object-cover rounded" />
+  <p class="text-3xl mb-2">{{ data.projectData.projectName }}</p>
+  <p class="font-light mb-8"><strong>Prosjektleder: </strong>{{ data.projectData.projectLeader }}</p>
+
+  <div class="mb-8">
+    <p><strong>Beskrivelse:</strong></p>
+    <p>{{ data.projectData.description }}</p>
+  </div>
+  <div class="mb-8">
+    <strong></strong>
+    <ul>
+      <li *ngFor="let type of data.projectData.moreDetails.propertyTypes">{{ type }}</li>
+    </ul>
+  </div>
+
+  <strong>Økonomi Informasjon</strong>
+  <ul>
+    <li *ngFor="let purchaseProcess of data.projectData.moreDetails.purchaseProcess">{{ purchaseProcess }}</li>
+  </ul>
+</div>

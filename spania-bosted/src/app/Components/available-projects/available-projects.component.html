@@ -1,23 +1,20 @@
- <div class="grid grid-cols-4 gap-x-10">
-    <div
-      class="bg-white shadow-2xl rounded-lg px-6 py-4 mb-8"
-      *ngFor="let item of projects | slice : 0 : amountOfProjects"
-    >
-      <img
-        src="{{ item.imageUrl }}"
-        alt=""
-        class="rounded h-60 object-contain"
-      />
-      <p class="font-medium text-xl mb-1">{{ item.title }}</p>
-      <p class="font-thin mb-2 text-lg">
-        Project Manager: <span>{{ item.projectManager }}</span>
-      </p>
-      <p class="text-lg">{{ item.description }}</p>
-    </div>
-  </div>
-  <button
-    class="btn-accent mx-auto"
-    (click)="showLess ? showLessProjects() : showMoreProjects()"
+<div class="grid grid-cols-4 gap-x-10">
+  <div
+    class="bg-white shadow-2xl rounded-lg px-6 py-2 mb-8"
+    *ngFor="let item of projectData | slice : 0 : amountOfProjects"
+    (click)="openModule(item)"
   >
-    {{ showLess ? "Show less" : "Show more" }}
-  </button>
+    <img src="{{ item.imgUrl }}" alt="" class="rounded h-60 object-contain" />
+    <p class="font-medium text-xl mb-1">{{ item.projectName }}</p>
+    <p class="font-thin mb-2 text-lg">
+      Project Manager: <span>{{ item.projectLeader }}</span>
+    </p>
+    <p class="text-lg">{{ item.shortDescription }}</p>
+  </div>
+</div>
+<button
+  class="btn-accent mx-auto block mt-8"
+  (click)="showLess ? showLessProjects() : showMoreProjects()"
+>
+  {{ showLess ? "Show less" : "Show more" }}
+</button>

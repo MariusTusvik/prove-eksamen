@@ -41,7 +41,7 @@ export class OurTeamComponent {
       image: '/assets/images/employees/EliotØdegård.png',
       phone: "+47 974 91 105",
       email: "markus@spaniabosted.no"
-    }, 
+    },
     {
       name: 'Carolina Gingles Burke',
       position: 'Eindomsmegler',

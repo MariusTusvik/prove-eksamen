@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './front-page.component.html',
   styleUrls: ['./front-page.component.scss'],
 })
-export class FrontPageComponent {
-  
-}
+export class FrontPageComponent {}

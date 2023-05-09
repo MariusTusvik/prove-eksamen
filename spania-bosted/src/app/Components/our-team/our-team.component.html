@@ -1,15 +1,15 @@
 <div class="grid grid-cols-3 gap-12">
   <div
     *ngFor="let employee of employees; let i = index"
-    class="shadow-xl h-fit"
+    class="h-fit shadow-xl"
   >
-    <div class="bg-primary p-6 inline-block h-fit">
+    <div class="inline-block h-fit bg-primary p-6">
       <img
         src="{{ employee.image }}"
         alt="{{ employee.name }}"
-        class="w-full object-contain mb-4"
+        class="mb-4 w-full object-contain"
       />
-      <h2 class="text-lg font-semibold mb-2">{{ employee.name }}</h2>
+      <h2 class="mb-2 text-lg font-semibold">{{ employee.name }}</h2>
       <p class="text-gray-600">{{ employee.position }}</p>
     </div>
     <div class="bg-secondary px-6 py-4">

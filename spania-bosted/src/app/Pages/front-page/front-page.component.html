@@ -1,6 +1,6 @@
 <!-- Landing -->
 <div
-  class="relative mb-12 h-[90vh] bg-landing-image bg-no-repeat bg-cover flex justify-center items-center"
+  class="bg-landing-image relative mb-12 flex h-[90vh] items-center justify-center bg-cover bg-no-repeat"
 >
   <div class="">
     <img src="/assets/design-elements/Logo.png" alt="" class="h-32" />
@@ -8,13 +8,13 @@
   <img
     src="/assets/design-elements/img-transition1.svg"
     alt=""
-    class="absolute block h-auto bottom-0"
+    class="absolute bottom-0 block h-auto"
   />
 </div>
 
 <!-- Introduction -->
-<div class="text-center max-w-4xl mx-auto mb-16">
-  <p class="text-3xl mb-4">Spania Bosted Businiss Portal</p>
+<div class="mx-auto mb-16 max-w-4xl text-center">
+  <p class="mb-4 text-3xl">Spania Bosted Businiss Portal</p>
   <p class="text-xl">
     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -27,11 +27,11 @@
 
 <!-- Contact -->
 <div class="bg-secondary">
-  <div class="max-w-5xl mx-auto py-12">
-    <p class="text-2xl mb-8 text-center">
+  <div class="mx-auto max-w-5xl py-12">
+    <p class="mb-8 text-center text-2xl">
       Har du et problem? Kontakt en av støtte avdelingene våres!
     </p>
-    <div class="flex gap-x-20 mx-auto w-fit text-white relative">
+    <div class="relative mx-auto flex w-fit gap-x-20 text-white">
       <button class="btn-accent">IT-Support</button>
       <button class="btn-accent">HR avdeling</button>
     </div>
@@ -39,14 +39,13 @@
 </div>
 
 <!-- About Spania Bosted -->
-<div class="bg-accent text-white mb-12">
-  <div class="py-8 flex gap-x-16 max-w-5xl mx-auto">
+<div class="mb-12 bg-accent text-white">
+  <div class="mx-auto flex max-w-5xl gap-x-16 py-8">
     <img src="/assets/images/home-office.jpg" alt="" class="rounded" />
-    <div class="flex-col flex justify-between">
+    <div class="flex flex-col justify-between">
       <div>
-        <p class="text-3xl mb-6">Spania Bosted</p>
+        <p class="mb-6 text-3xl">Spania Bosted</p>
         <p class="text-xl">
-          
           Spania Bosted er et norsk eiendomsmeglerfirma som spesialiserer seg på
           å hjelpe kunder med å finne og kjøpe drømmeboligen i Spania. Vi tilbyr
           tjenester innenfor rådgivning, forhandlinger, finansiering og juridisk
@@ -61,15 +60,15 @@
 </div>
 
 <!-- Projects -->
-<div class="max-w-7xl mx-auto block justify-center mb-12">
-  <p class="text-5xl text-center mb-12">Våre tilgjenglige prosjekter</p>
+<div class="mx-auto mb-12 block max-w-7xl justify-center">
+  <p class="mb-12 text-center text-5xl">Våre tilgjenglige prosjekter</p>
   <app-available-projects></app-available-projects>
 </div>
 
 <!-- Our Team -->
-<div class="bg-offWhite mb-12 py-12">
-  <div class="max-w-7xl mx-auto">
-    <p class="text-5xl text-center mb-12">Våre ansatte</p>
+<div class="mb-12 bg-offWhite py-12">
+  <div class="mx-auto max-w-7xl">
+    <p class="mb-12 text-center text-5xl">Våre ansatte</p>
     <app-our-team></app-our-team>
   </div>
 </div>

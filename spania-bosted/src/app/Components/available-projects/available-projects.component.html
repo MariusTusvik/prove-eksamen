@@ -1,19 +1,23 @@
 <div class="grid grid-cols-4 gap-x-10">
   <div
-    class="bg-white shadow-2xl rounded-lg px-6 py-6 mb-8 hover:scale-105 transition-all duration-200 cursor-pointer"
+    class="mb-8 cursor-pointer rounded-lg bg-white px-6 py-6 shadow-2xl transition-all duration-200 hover:scale-105"
     *ngFor="let item of projectData | slice : 0 : amountOfProjects"
     (click)="openModule(item)"
   >
-    <img src="{{ item.imgUrl }}" alt="" class="rounded w-full object-contain mb-4" />
-    <p class="font-medium text-xl mb-1">{{ item.projectName }}</p>
-    <p class="font-thin mb-2 text-lg">
+    <img
+      src="{{ item.imgUrl }}"
+      alt=""
+      class="mb-4 w-full rounded object-contain"
+    />
+    <p class="mb-1 text-xl font-medium">{{ item.projectName }}</p>
+    <p class="mb-2 text-lg font-thin">
       Prosjekt Ansvarlig: <span>{{ item.projectLeader }}</span>
     </p>
     <p class="text-lg">{{ item.shortDescription }}</p>
   </div>
 </div>
 <button
-  class="btn-accent mx-auto block mt-8"
+  class="btn-accent mx-auto mt-8 block"
   (click)="showLess ? showLessProjects() : showMoreProjects()"
 >
   {{ showLess ? "Show less" : "Show more" }}

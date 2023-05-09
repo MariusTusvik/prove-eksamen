@@ -11,6 +11,7 @@ module.exports = {
         accentShade: "#155a7e",
         secondaryAccent: "#d3af50",
         offWhite: "#e3f5fe",
+        secondaryOffWhite: "#eaeaea",
       },
     },
   },

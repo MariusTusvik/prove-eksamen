@@ -9,6 +9,7 @@ import { AvailableProjectsComponent } from './Components/available-projects/avai
 import { OurTeamComponent } from './Components/our-team/our-team.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ProjectModalComponent } from './Components/project-modal/project-modal.component';
+import { CookieBannerComponent } from './Components/cookie-banner/cookie-banner.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProjectModalComponent } from './Components/project-modal/project-modal.
     FrontPageComponent,
     AvailableProjectsComponent,
     OurTeamComponent,
-    ProjectModalComponent
+    ProjectModalComponent,
+    CookieBannerComponent
   ],
   imports: [
     BrowserModule,
